@@ -1,0 +1,60 @@
+.navbar {
+	display: none;
+	z-index: 8888;
+  }
+  
+  .navbar ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Libre Franklin", sans-serif;
+	font-weight: 400;
+	font-size: 0.7rem;
+  }
+  
+  .navbar ul li {
+	margin: 0 0.2rem;
+	padding: 0.2rem;
+	border-radius: 4px;
+	background-color: transparent;
+	transition: background-color 0.6s ease;
+  }
+  
+  .navbar ul li:hover {
+	background-color: #f7f7f7;
+  }
+  
+  @media screen and (min-width: 1000px) {
+	.navbar {
+	  display: block;
+	  background-color: white;
+	}
+  
+	.navbar_scrolled {
+	  padding: 0.3rem 0;
+	  position: fixed;
+	  width: 100%;
+	  top: 0;
+	  left: 50%;
+	  transform: translate(-50%, 0px);
+	  box-shadow: 0 0 5px 1px rgb(0 0 0 / 28%);
+	  animation: scrolling 0.4s ease-out;
+	}
+  
+	@keyframes scrolling {
+	  from {
+		transform: translate(-50%, -70px);
+	  }
+	  to {
+		transform: translate(-50%, 0px);
+	  }
+	}
+  }
+  
+  @media screen and (min-width: 1200px) {
+	.navbar ul li {
+	  margin: 0 0.4rem;
+	  padding: 0.4rem 0.3rem;
+	}
+  }
+  
