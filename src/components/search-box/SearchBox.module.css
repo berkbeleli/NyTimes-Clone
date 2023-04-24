@@ -1,0 +1,30 @@
+.search_box {
+	flex: 1;
+	display: flex;
+	align-items: center;
+  }
+  
+  .search_icon {
+	cursor: pointer;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 0.6rem;
+	font-size: 0.9rem;
+	margin-right: 0.5rem;
+  }
+  
+  .search_icon_enabled {
+	background-color: #f7f7f7;
+  }
+  
+  .search_icon_disabled {
+	background-color: transparent;
+	transition: background-color 0.6s ease;
+  }
+  
+  .search_icon_disabled:hover {
+	background-color: #f7f7f7;
+  }
+  
