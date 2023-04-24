@@ -1,0 +1,17 @@
+.date {
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 0.6rem;
+	text-align: center;
+  }
+  @media screen and (min-width: 1000px) {
+	.date {
+	  text-align: right;
+	  flex: 1;
+	}
+  }
+  
+  .date_text {
+	font-weight: bold;
+	margin-bottom: 0.2rem;
+  }
+  
