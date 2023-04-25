@@ -5,7 +5,7 @@ import { SidebarProvider } from "./contexts/SidebarContext";
 import { QueryArticlesProvider } from "./contexts/QueryArticlesContext";
 import { Header, Sidebar, Footer } from "./components";
 import * as Pages from "./pages";
-
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
     <SidebarProvider>
       <QueryArticlesProvider>
         <Router>
+        <Analytics />
           <div className="app">
             <Header />
             <Sidebar />
