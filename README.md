@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+<p align="center">
+  <h1 align="center">NyTimes Clone</h1>
+  <p align="center">
+   Clone of The New York Times website, built with React and New York Times API
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#links">Links & Contacts</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#screenshots">ScreenShots</a></li>
+  </ol>
+</details>
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+NyTimes Clone is a web application that aims to recreate the user interface and functionality of The New York Times website. Built using modern web technologies such as React.js for deployment, this clone provides a similar browsing experience to the original website. Articles data are fetched from the [New York Times API](https://developer.nytimes.com/apis).
+User can explore three main routes:
 
-### `npm start`
+<ul>
+<li> <strong>The Home Page</strong>, which contains most relevant articles currently on the first page; </li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<li> <strong>Specific Sections</strong>, like Tech, Health, Science, which display most relevant articles of such categories; </li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<li><strong>Search Section</strong>, which displays paginated articles based on the keyword typed by the user in the search-bar. Articles can be sorted by "relevance", "newest" and "oldest".</li>
+</ul>
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React.js](https://react.dev/)
+- [CSS modules](https://github.com/css-modules/css-modules)
+- [Axios](https://github.com/axios/axios)
+- [react-js-pagination](https://www.npmjs.com/package/react-js-pagination)
+- [react-responsive](https://www.npmjs.com/package/react-responsive)
+- [react-animation-on-scroll](https://www.npmjs.com/package/react-animation-on-scroll)
+- [react-spring](https://react-spring.io/)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Running the application requires [Node](https://nodejs.org/en/) to be installed on your operating system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can then install the latest version of npm from your terminal with the command:
 
-### `npm run eject`
+```sh
+npm install npm@latest -g
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository locally with the git command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```sh
+   git clone https://github.com/berkbeleli/NyTimes-Clone.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install NPM packages:
 
-## Learn More
+   ```sh
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Create an account on [New York Times API](https://developer.nytimes.com/get-started) website
+   and follow the instructions to get your api-key
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Create a .env file in the root folder with just one line:
 
-### Code Splitting
+   ```sh
+   REACT_APP_NYTIMES_API_KEY = 'ENTER YOUR API KEY'
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Run the app with command:
 
-### Analyzing the Bundle Size
+   ```sh
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+NyTimes Clone is released under the MIT License. Please refer to the `LICENSE` file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Project Repository: [nytimes-clone](https://github.com/berkbeleli/NyTimes-Clone)
 
-### Deployment
+Project Website: [NyTimes clone](https://nytimes-clone.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Portfolio: [berkbeleli-portfolio](https://berkbeleli.onrender.com/)
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [New York Times API](https://developer.nytimes.com/)
+- [CSS modules](https://github.com/css-modules/css-modules)
+- [react-js-pagination](https://www.npmjs.com/package/react-js-pagination)
+  
+## ScreenShots
+
+  <a href="https://github.com/berkbeleli/NyTimes-Clone">
+    <img src="https://user-images.githubusercontent.com/44535117/234363403-163551fb-a3f0-49b3-9e35-71ad5e34b68a.png" alt="nytimes-clone-screenshot">
+    <img src="https://user-images.githubusercontent.com/44535117/234363448-ba24f1bf-ec91-4d74-bc92-468ea510f32e.png" alt="nytimes-clone-screenshot">
+    <img src="https://user-images.githubusercontent.com/44535117/234363463-d13ffb5f-40b1-4971-a97c-dd828f6274a5.png" alt="nytimes-clone-screenshot">
+  </a>
