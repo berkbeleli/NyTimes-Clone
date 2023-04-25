@@ -7,7 +7,7 @@ import { Header, Sidebar, Footer } from "./components";
 import * as Pages from "./pages";
 
 
-function App() {
+const App = () => {
   return (
     <SectionsProvider>
     <SidebarProvider>

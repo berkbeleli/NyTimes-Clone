@@ -1,74 +1,73 @@
 .pagination_container {
-	margin: 2rem 0;
-  }
-  
-  .pagination {
-	display: flex;
-	justify-content: center;
-  }
-  
-  ul {
-	list-style: none;
-	padding: 0;
-  }
-  
-  ul.pagination li {
-	background-color: #fffefed5;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	width: 2rem;
-	height: 2rem;
-	color: #333;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1rem;
-	padding: 0.5rem;
-	transition: all 0.3s ease;
-  }
-  
-  ul.pagination li a {
-	text-decoration: none;
-	transition: all 0.3s ease;
-  }
-  
-  ul.pagination li:hover,
-  ul.pagination li:active {
-	background-color: #333;
-  }
-  
-  ul.pagination li:not(.disabled):hover,
-  ul.pagination li:not(.disabled):active {
-	border: none;
-  }
-  
-  ul.pagination li.active {
-	background-color: #333;
-	border: none;
-  }
-  
-  ul.pagination li.active a {
-	color: #ebebeb;
-  }
-  
-  ul.pagination li.disabled {
-	cursor: default;
-	background-color: #f7f7f7;
-  }
-  
-  ul.pagination li.disabled a {
-	color: #333;
-	opacity: 0.6;
-  }
-  
-  ul.pagination li.disabled:hover a {
-	color: #333;
-	opacity: 0.6;
-	cursor: default;
-  }
-  
-  ul.pagination li:hover a,
-  ul.pagination li:active a {
-	color: #ebebeb;
-  }
-  
+  margin: 2rem 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pagination li {
+  background-color: #fffefed5;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  width: 2rem;
+  height: 2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+ul.pagination li a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+ul.pagination li:hover,
+ul.pagination li:active {
+  background-color: #333;
+}
+
+ul.pagination li:not(.disabled):hover,
+ul.pagination li:not(.disabled):active {
+  border: none;
+}
+
+ul.pagination li.active {
+  background-color: #333;
+  border: none;
+}
+
+ul.pagination li.active a {
+  color: #ebebeb;
+}
+
+ul.pagination li.disabled {
+  cursor: default;
+  background-color: #f7f7f7;
+}
+
+ul.pagination li.disabled a {
+  color: #333;
+  opacity: 0.6;
+}
+
+ul.pagination li.disabled:hover a {
+  color: #333;
+  opacity: 0.6;
+  cursor: default;
+}
+
+ul.pagination li:hover a,
+ul.pagination li:active a {
+  color: #ebebeb;
+}

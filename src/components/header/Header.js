@@ -14,22 +14,22 @@ import {
 import styles from "./Header.module.css";
 
 export const Header = () => {
-	const { isSidebarOpen, setHeaderHeight } = useContext(SidebarContext);
-	const { isDesktopOrLaptop, isTabletOrMobile } = useMediaQueryHook();
-  
-	const header = useRef(null);
-  
-	useEffect(() => {
-	  // dynamically retrieve header_1 height to set sidebar absolute position below it
-	  if (header !== null) {
-		let height = header.current.clientHeight;
-		setHeaderHeight(height);
-	  }
-	}, [header]);
-  
-	return (
-	  <header className={styles.header}>
-		 <section ref={header} className={styles.header_1}>
+  const { isSidebarOpen, setHeaderHeight } = useContext(SidebarContext);
+  const { isDesktopOrLaptop, isTabletOrMobile } = useMediaQueryHook();
+
+  const header = useRef(null);
+
+  useEffect(() => {
+    // dynamically retrieve header_1 height to set sidebar absolute position below it
+    if (header !== null) {
+      let height = header.current.clientHeight;
+      setHeaderHeight(height);
+    }
+  }, [header]);
+
+  return (
+    <header className={styles.header}>
+      <section ref={header} className={styles.header_1}>
         {isDesktopOrLaptop && <SearchBox />}
         {isTabletOrMobile && <HamburgerIcon />}
         <Logo inHeader={true} />
@@ -46,7 +46,6 @@ export const Header = () => {
         {isDesktopOrLaptop && <Navbar />}
         {isTabletOrMobile && isSidebarOpen === false && <DateToday />}
       </section>
-	  </header>
-	);
-  };
-  
+    </header>
+  );
+};

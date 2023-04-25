@@ -1,39 +1,38 @@
 .error_page {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 4rem 0;
-  }
-  
-  .error_message_container {
-	color: #555;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 3rem;
-	border: 1px solid #e4e2e2;
-  }
-  
-  .error_message_container p {
-	font-family: "Frank Ruhl Libre", serif;
-	text-align: center;
-  }
-  
-  .error_message_container .back_btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.5rem 1rem;
-	margin-top: 2rem;
-	background-color: #f7f7f7;
-	font-size: 0.8rem;
-	border-radius: 3px;
-	transition: all 0.3s ease;
-  }
-  
-  .back_btn:hover,
-  .back_btn:active {
-	filter: brightness(80%);
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.error_message_container {
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border: 1px solid #e4e2e2;
+}
+
+.error_message_container p {
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: center;
+}
+
+.error_message_container .back_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  background-color: #f7f7f7;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.back_btn:hover,
+.back_btn:active {
+  filter: brightness(80%);
+}

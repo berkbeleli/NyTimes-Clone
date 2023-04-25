@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { smoothScroll } from "../utilities/scrolling";
 
@@ -17,7 +17,7 @@ const useFetch = (url, querySearch = false) => {
     setData([]);
     smoothScroll(0);
     setLoading(true);
-
+console.log(url)
     try {
       const response = await axios.get(url, { cancelToken: source.token });
       if (response) {
@@ -45,6 +45,7 @@ const useFetch = (url, querySearch = false) => {
           setError(`${error.response.status}: Something went wrong`);
         }
       } else {
+        setError("Something went wrong");
         console.log(error);
       }
     }

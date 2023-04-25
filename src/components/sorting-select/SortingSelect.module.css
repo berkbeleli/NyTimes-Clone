@@ -1,24 +1,23 @@
 .sorting_select {
-	border: 1px solid transparent;
-	padding: 0.5rem;
-	transition: all 0.3s ease;
-  }
-  
-  .sorting_select select {
-	font-size: 1rem;
-	padding: 0.5rem;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-  }
-  
-  .sorting_select select option {
-	font-size: 0.9rem;
-  }
-  
-  .sorting_select:hover,
-  .sorting_select:active {
-	border: 1px solid rgb(190, 190, 190);
-	border-radius: 5px;
-  }
-  
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.sorting_select select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sorting_select select option {
+  font-size: 0.9rem;
+}
+
+.sorting_select:hover,
+.sorting_select:active {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+}
