@@ -17,7 +17,7 @@ const useFetch = (url, querySearch = false) => {
     setData([]);
     smoothScroll(0);
     setLoading(true);
-console.log(url)
+
     try {
       const response = await axios.get(url, { cancelToken: source.token });
       if (response) {
@@ -33,7 +33,7 @@ console.log(url)
     } catch (error) {
       setLoading(false);
       setData([]);
-
+      console.log(error)
       if (error.response) {
         if (error.response.status === 404) {
           setError("Error 404 - Invalid request: can't find data");
