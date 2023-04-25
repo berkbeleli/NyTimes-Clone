@@ -1,0 +1,227 @@
+.article_info {
+  padding: 0.5rem;
+  order: 2;
+  position: relative;
+}
+
+.article_img {
+  width: 50%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  order: 1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  align-self: center;
+}
+
+.article_info .abstract {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  line-height: 1.1875rem;
+  margin: 1rem 0 4rem;
+  padding: 0 0.4rem;
+  word-break: break-word;
+}
+
+.article_info .date {
+  font-family: "Libre Baskerville", serif;
+  color: rgb(161, 160, 160);
+  font-size: 0.7rem;
+  margin: 0.6rem 0;
+  padding: 0 0.4rem;
+}
+
+.article_info .author {
+  align-self: flex-end;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 300;
+  font-size: 0.6rem;
+  color: rgb(161, 160, 160);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e2e2e2;
+  margin: 0.4rem 0 0;
+  padding: 0.4rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.article_info .author .author_icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.3rem;
+}
+
+.article_info .author p {
+  max-width: 80%;
+  line-height: 1rem;
+}
+
+.article_info .title {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #121212;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  font-weight: 700;
+  margin: 1rem 0 0.4rem;
+  padding: 0 0.4rem;
+}
+
+.article_info .section_name {
+  font-family: "Bevan", cursive;
+  color: rgb(155, 30, 30);
+  font-weight: 700;
+  font-size: 0.6rem;
+  margin: 0.5rem 0;
+  padding: 0 0.4rem 0.4rem;
+  border-bottom: 1px solid rgb(155, 30, 30);
+}
+
+.main_article {
+  box-shadow: rgba(211, 212, 212, 0.8) 0px 2px 8px 0px;
+  border: 1px solid rgba(220, 223, 224, 0.8);
+  border-radius: 3px;
+}
+
+.filtered_article {
+  width: 100%;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+  align-items: center;
+}
+
+.main_article,
+.filtered_article {
+  display: flex;
+  flex-direction: column;
+
+  z-index: -9999;
+}
+
+.main_article .article_img {
+  width: 100%;
+}
+
+.main_article .article_info {
+  width: 100%;
+}
+
+.filtered_article .article_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filtered_article .article_info .date {
+  width: 100%;
+  flex: 1;
+}
+
+.filtered_article .article_info .text_block {
+  width: 100%;
+}
+
+.filtered_article .article_info .text_block .abstract {
+  margin-bottom: 1rem;
+}
+
+.filtered_article .article_info .author {
+  position: initial;
+  width: 100%;
+}
+
+.filtered_article .article_img {
+  width: 100%;
+  background-position: top center;
+  height: 300px;
+}
+
+@media screen and (min-width: 500px) {
+  .filtered_article {
+    width: 80%;
+  }
+
+  .main_article {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .filtered_article {
+    width: 70%;
+  }
+  .main_article {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .article_info {
+    order: 1;
+  }
+
+  .article_img {
+    height: 300px;
+    order: 2;
+  }
+
+  .main_article,
+  .filtered_article {
+    flex-direction: row;
+  }
+
+  .filtered_article {
+    width: 100%;
+  }
+
+  .main_article {
+    width: 100%;
+    margin: 0;
+  }
+
+  .filtered_article .article_info {
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+  }
+
+  .filtered_article .article_info .date {
+    flex: 0.2;
+    align-self: center;
+    text-align: center;
+  }
+
+  .filtered_article .article_info .text_block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex: 0.8;
+    align-self: center;
+  }
+
+  .filtered_article .article_img {
+    flex: 0.9;
+    height: 300px;
+  }
+  .main_article .article_img {
+    width: 50%;
+    min-height: 350px;
+  }
+
+  .main_article .article_info {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtered_article {
+    width: 80%;
+  }
+}

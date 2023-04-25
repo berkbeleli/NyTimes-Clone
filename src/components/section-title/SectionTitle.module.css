@@ -1,0 +1,21 @@
+.section_title {
+  z-index: -9999;
+  font-family: "Bevan", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+  padding-left: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e2e2e2;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .section_title {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    padding-left: 0;
+    text-align: left;
+  }
+}

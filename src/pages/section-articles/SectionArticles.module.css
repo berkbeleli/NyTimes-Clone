@@ -1,0 +1,10 @@
+.section_articles {
+  position: relative;
+}
+
+.articles_layout {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2rem;
+}
