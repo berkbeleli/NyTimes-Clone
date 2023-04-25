@@ -1,0 +1,31 @@
+.footer_last_row_items {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	font-family: "Libre Franklin", sans-serif;
+	padding-top: 1rem;
+  }
+  
+  @media screen and (min-width: 600px) {
+	.footer_last_row_items {
+	  flex-direction: row;
+	  justify-content: center;
+	  flex-wrap: wrap;
+	}
+  }
+  
+  @media screen and (min-width: 1000px) {
+	.footer_last_row_items {
+	  border-top: 1px solid #ebebeb;
+	  margin-top: 1rem;
+	  font-family: "Libre Franklin", sans-serif;
+	  padding-top: 1rem;
+	}
+  }
+  .footer_last_row_items li {
+	color: #666;
+	font-size: 0.6rem;
+	font-weight: 400;
+	margin: 0.4rem;
+  }
+  
