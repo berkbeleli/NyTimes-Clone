@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { SectionsProvider } from "./contexts/SectionsContext";
+import { SidebarProvider } from "./contexts/SidebarContext";
+import { QueryArticlesProvider } from "./contexts/QueryArticlesContext";
+import { Header, Sidebar, Footer } from "./components";
+import * as Pages from "./pages";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SectionsProvider>
+    <SidebarProvider>
+      <QueryArticlesProvider>
+        <Router>
+          <div className="app">
+            <Header />
+            <Sidebar />
+            <Routes>
+              <Route exact path="/" element={<Pages.Home />} />
+              <Route
+                exact
+                path="/query/:searchTerm"
+                element={<Pages.QueryArticles />}
+              />
+              <Route
+                exact
+                path="/section/:section"
+                element={<Pages.SectionArticles />}
+              />
+              <Route path="*" element={<Pages.ErrorPage />} />
+            </Routes>
+            <Footer />
+          </div>
+        </Router>
+      </QueryArticlesProvider>
+    </SidebarProvider>
+  </SectionsProvider>
   );
 }
 
